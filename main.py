@@ -34,9 +34,9 @@ async def root():
 async def read_item(item_id):
     return {"item_id": item_id}
 
-# @app.get("/users/me")
-# async def read_user_me():
-#     return {"user_id": "the current user"}
+@app.get("/users/me")
+async def read_user_me():
+    return {"user_id": "the current user"}
 
 # @app.get("/users/{user_id}")
 # async def read_user(user_id: str):
